@@ -41,16 +41,6 @@ const deleteNewRow = () => {
     }
 }
 
-const showBtn = () => {
-  deleteColumn.style = 'visibility: visible'
-  deleteRow.style = 'visibility: visible'
-}
-
-const hiddenBtn = () => {
-  deleteColumn.style = 'visibility: hidden'
-  deleteRow.style = 'visibility: hidden'
-}
-
 const visBtns = () => {
   deleteColumn.style = 'visibility: visible'
   deleteRow.style = 'visibility: visible'
@@ -62,7 +52,7 @@ const hidBtns = () => {
 }
 
 
-const delegato = (event) => {
+const getIndex = (event) => {
   if (!event.target.matches('div')) return
   for (let i = 0; i < tableCell.length; i++){
       tableCell[i].index = i+1
@@ -78,7 +68,7 @@ deleteColumn.addEventListener('mouseover', visBtns)
 deleteRow.addEventListener('mouseover', visBtns)
 deleteColumn.addEventListener('mouseout', hidBtns)
 deleteRow.addEventListener('mouseout', hidBtns)
-table.addEventListener('mouseover', showBtn)
-table.addEventListener('mouseout', hiddenBtn)
+table.addEventListener('mouseover', visBtns)
+table.addEventListener('mouseout', hidBtns)
 
-table.addEventListener('click', delegato)
+table.addEventListener('click', getIndex)
