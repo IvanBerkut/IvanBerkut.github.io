@@ -1,13 +1,13 @@
-.table-container{
+.squares_table-container{
   position: relative;
   display: inline-block;
   margin: 70px;
 }
-.table{
+.squares_table{
     display: table;
     border: 2px solid #48aae6;
   }
-  .table-cell{
+  .squares_table-cell{
     display: table-cell;
     width: 50px;
     height: 50px;
@@ -15,29 +15,11 @@
     border: 2px solid #fff;
     position: relative;
   }
-  .table-row{
+  .squares_table-row{
     display: table-row;
   }
-  .table-row-btn{
-    background-color: #fff;
-  }
-  .table-cell-btn{
-    background-color: #fff;
-  }
-  .btn{
-    display: inline-block;
-    border: 2px solid #48aae6;
-    width: 115px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 2px 2px #48aae6;
-    cursor: pointer;
-    outline: none;
-    background-color: #fff;
-  }
   
-  #create-row{
+  #squares_create-row{
     width: 50px;
     height: 50px;
     background-color: #e7b029;
@@ -46,11 +28,12 @@
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    bottom: -55px;
-    transition: 1s;
+    bottom: -52px;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
 
-  #create-column {
+  #squares_create-column {
     width: 50px;
     height: 50px;
     background-color: #e7b029;
@@ -60,14 +43,15 @@
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: -55px;
-    transition: 1s;
+    right: -52px;
+    transition-property: background-color;
+    transition-duration: 1s;
   }
 
-  #create-row:hover, #create-column:hover  {
+  #squares_create-row:hover, #squares_create-column:hover  {
     background-color: #f7c35d;
   }
-  #delete-row {
+  #squares_delete-row {
     background-color: #a70000;
     width: 50px;
     height: 50px;
@@ -76,10 +60,9 @@
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    left: -55px;
-    transition: .5s;
+    left: -52px;
   }
-  #delete-column {
+  #squares_delete-column {
     background-color: #a70000;
     width: 50px;
     height: 50px;
@@ -88,19 +71,19 @@
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    top: -55px;
-    transition: .5s;
+    top: -52px;
   }
-  #delete-row:hover, #delete-column:hover {
+  #squares_delete-row:hover, #squares_delete-column:hover {
     background-color: #c92140;
   }
 
-.buttons-create, .buttons-delete{
+.squares_buttons-create, .squares_buttons-delete{
   display: flex;
   justify-content: center; 
   align-items: center;
-  margin: 3px;
+  border: 1px solid #fff;
 }
-.buttons-delete{
+.squares_buttons-delete{
   visibility: hidden;
+  transition: .5s;
 }
