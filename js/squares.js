@@ -47,7 +47,6 @@ const deleteNewRow = () => {
     }
   deleteColumn.style.visibility = 'hidden'
   deleteRow.style.visibility = 'hidden'
-  console.log(tableRow.length)
 }
 
 const visBtns = () => {
@@ -83,6 +82,10 @@ table.addEventListener('mouseover', event => {
 
 createColumn.addEventListener('click', createNewColumn)
 createRow.addEventListener('click', createNewRow)
+createColumn.addEventListener('mouseover', visBtns)
+createRow.addEventListener('mouseover', visBtns)
+createColumn.addEventListener('mouseout', hidBtns)
+createRow.addEventListener('mouseout', hidBtns)
 deleteColumn.addEventListener('click', deleteNewColumn)
 deleteRow.addEventListener('click', deleteNewRow)
 deleteColumn.addEventListener('mouseover', visBtns)
