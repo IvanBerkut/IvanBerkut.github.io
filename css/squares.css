@@ -30,7 +30,7 @@
     position: absolute;
     bottom: -52px;
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: .3s;
   }
 
   #squares_create-column {
@@ -45,7 +45,7 @@
     top: 0;
     right: -52px;
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: .3s;
   }
 
   #squares_create-row:hover, #squares_create-column:hover  {
@@ -85,5 +85,6 @@
 }
 .squares_buttons-delete{
   visibility: hidden;
-  transition: .5s;
+  transition-property: left, top, background-color;
+  transition-duration: .3s;
 }
