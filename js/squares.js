@@ -69,8 +69,10 @@ const getPosition = element => {
 
 
 table.addEventListener('mouseover', event => {
+  const row = event.target.closest('.squares_table-row')
+  if (!row) return
   posX = getPosition(event.target);
-  posY = getPosition(event.target.closest('.squares_table-row'))
+  posY = getPosition(row)
   let stepCol = tableCell[0].offsetHeight
   let stepRow = tableCell[0].offsetWidth 
   let posDelRowBtn = (posY) * stepCol
