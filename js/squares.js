@@ -50,8 +50,13 @@ const deleteNewRow = () => {
 }
 
 const visBtns = () => {
+  let lengthRow = tableRow[0].children
+  if (lengthRow.length > 1){
     deleteColumn.style.visibility = 'visible'
+  }
+  if(tableRow.length>1){
     deleteRow.style.visibility = 'visible'
+  } 
 }
 
 const hidBtns = () => {
