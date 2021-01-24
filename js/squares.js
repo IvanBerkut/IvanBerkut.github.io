@@ -1,10 +1,10 @@
-const table = document.getElementById('squares_table')
+const table = document.getElementsByClassName('squares_table')[0]
 const tableCell = document.getElementsByClassName('squares_table-cell')
 const tableRow = document.getElementsByClassName('squares_table-row')
-const createColumn = document.getElementById('squares_create-column')
-const createRow = document.getElementById('squares_create-row')
-const deleteColumn = document.getElementById('squares_delete-column')
-const deleteRow = document.getElementById('squares_delete-row')
+const createColumn = document.getElementsByClassName('squares_create-column')[0]
+const createRow = document.getElementsByClassName('squares_create-row')[0]
+const deleteColumn = document.getElementsByClassName('squares_delete-column')[0]
+const deleteRow = document.getElementsByClassName('squares_delete-row')[0]
 
 let posX = ''
 let posY = ''
@@ -42,7 +42,7 @@ const deleteNewColumn = () => {
 
 const deleteNewRow = () => {
     if (tableRow.length>1){
-      let removableRow = document.querySelectorAll('#squares_table .squares_table-row')[posY]
+      let removableRow = document.querySelectorAll('.squares_table .squares_table-row')[posY]
       table.removeChild(removableRow)
     }
   deleteColumn.style.visibility = 'hidden'

@@ -21,7 +21,7 @@
     display: table-row;
   }
   
-  #squares_create-row{
+  .squares_create-row{
     width: 50px;
     height: 50px;
     background-color: #e7b029;
@@ -37,7 +37,7 @@
     cursor: pointer;
   }
 
-  #squares_create-column {
+  .squares_create-column {
     width: 50px;
     height: 50px;
     background-color: #e7b029;
@@ -54,10 +54,10 @@
     border-left: 1px solid #fff;
   }
 
-  #squares_create-row:hover, #squares_create-column:hover  {
+  .squares_create-row:hover, .squares_create-column:hover  {
     background-color: #f7c35d;
   }
-  #squares_delete-row {
+  .squares_delete-row {
     background-color: #a70000;
     width: 50px;
     height: 50px;
@@ -69,7 +69,7 @@
     border: 3px solid #fff;
     border-right: 1px solid #fff;
   }
-  #squares_delete-column {
+  .squares_delete-column {
     background-color: #a70000;
     width: 50px;
     height: 50px;
@@ -81,7 +81,7 @@
     border: 3px solid #fff;
     border-bottom: 1px solid #fff;
   }
-  #squares_delete-row:hover, #squares_delete-column:hover {
+  .squares_delete-row:hover, .squares_delete-column:hover {
     background-color: #c92140;
   }
 
