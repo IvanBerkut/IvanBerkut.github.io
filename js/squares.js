@@ -11,28 +11,28 @@ let posY = ''
 
 const createNewColumn = () => {
   for(let i = 0; i < tableRow.length; i++){
-    let newTableCell = document.createElement('div')
+    const newTableCell = document.createElement('div')
     newTableCell.classList.add('squares_table-cell')
     tableRow[i].appendChild(newTableCell)
   }
 }
 
 const createNewRow = () => {
-  let divRow = document.createElement('div')
+  const divRow = document.createElement('div')
   divRow.classList.add('squares_table-row')
   table.appendChild(divRow)
   for (let i = 0; i < (tableCell.length/tableRow.length); i++){
-    let divCell = document.createElement('div')
+    const divCell = document.createElement('div')
     divCell.classList.add('squares_table-cell')
     divRow.appendChild(divCell)
   }
 }
 
 const deleteNewColumn = () => {
-  let lengthRow = tableRow[0].children
+  const lengthRow = tableRow[0].children
   if (lengthRow.length > 1){
       for(let i = tableRow.length-1; i >= 0; i--){
-        let tableRowForDel = tableRow[i].querySelectorAll('.squares_table-cell')
+        let tableRowForDel = tableRow[i].getElementsByClassName('squares_table-cell')
         tableRowForDel[posX].remove()
       }
     }
@@ -42,7 +42,7 @@ const deleteNewColumn = () => {
 
 const deleteNewRow = () => {
     if (tableRow.length>1){
-      let removableRow = document.querySelectorAll('.squares_table .squares_table-row')[posY]
+      let removableRow = document.getElementsByClassName('squares_table-row')[posY]
       table.removeChild(removableRow)
     }
   deleteColumn.style.visibility = 'hidden'
@@ -78,10 +78,10 @@ table.addEventListener('mouseover', event => {
   if (!row) return
   posX = getPosition(event.target);
   posY = getPosition(row)
-  let stepCol = tableCell[0].offsetHeight
-  let stepRow = tableCell[0].offsetWidth 
-  let posDelRowBtn = (posY) * stepCol
-  let posDelColBtn = (posX) * stepRow
+  const stepCol = tableCell[0].offsetHeight
+  const stepRow = tableCell[0].offsetWidth 
+  const posDelRowBtn = (posY) * stepCol
+  const posDelColBtn = (posX) * stepRow
   deleteColumn.style.left = `${posDelColBtn}px`
   deleteRow.style.top = `${posDelRowBtn}px`
 });
