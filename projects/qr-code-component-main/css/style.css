@@ -29,6 +29,7 @@ p {
   height: 497px;
   padding: 16px;
   border-radius: 20px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.477);
 }
 .qr-code-img {
   width: 288px;
