@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+body {
+    background-color: #141414;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 607px;
+}
+.social-links-profile-component {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    min-width: 375px;
+}
+.social-links-profile-component img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+.social-links-profile-component .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+.social-links-profile-component .name {
+    font-weight: 600;
+    font-size: 24px;
+}
+.social-links-profile-component .location {
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+}
+.social-links-profile-component .position {
+    font-size: 14px;
+    font-weight: 300;
+}
+.social-links-profile-component .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 18px;
+}
+ .social-links-profile-component .social-item{
+    background-color: #333333;
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.social-links-profile-component .social-item:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: #141414;
+}
+@media only screen and (max-width: 375px) {
+    .social-links-profile-component {
+        padding: 30px 25px;
+        min-width: 330px;
+    }
+    main {
+        min-height: 587px;
+    }
+}
