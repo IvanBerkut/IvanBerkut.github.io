@@ -29,6 +29,7 @@ main {
   align-items: center;
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .recipe-component {
   background-color: hsl(0, 0%, 100%);
