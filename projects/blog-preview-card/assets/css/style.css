@@ -69,6 +69,7 @@ main {
 }
 .blog-content-caption {
   font-family: "Figtree-ExtraBold";
+  font-size: 24px;
 }
 .blog-content-description {
   font-family: "Figtree-VariableFont";
