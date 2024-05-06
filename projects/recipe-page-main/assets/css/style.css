@@ -4,20 +4,12 @@
   margin: 0;
   padding: 0;
   font-family: "Outfit", sans-serif;
-  /* font-family: "Young Serif", serif; */
 }
 html {
   font-size: 16px;
 }
 body {
-  /* background-color: hsl(14, 45%, 36%); Nutmeg */
-  /* background-color: hsl(332, 51%, 32%); Dark Raspberry */
-  /* background-color: hsl(0, 0%, 100%); White */
-  /* background-color: hsl(330, 100%, 98%); Rose White */
-  /* background-color: hsl(30, 18%, 87%); Light Grey */
-  /* background-color: hsl(30, 10%, 34%); Wenge Brown */
-  /* background-color: hsl(24, 5%, 18%); Dark Charcoal */
-  background-color: hsl(30, 54%, 90%);  /* Eggshell */
+  background-color: hsl(30, 54%, 90%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,42 +124,44 @@ li.recipe-instructions-list-item::marker {
   margin-top: 1.66rem;
 }
 .recipe-table {
-    display: flex;
-    flex-direction: column;
-    margin-top: .85rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.85rem;
 }
 .recipe-table-item {
-    display: flex;
-    width: 100%;
-    padding-top: .8rem;
-    padding-bottom: 0.9rem;
-    padding-left: 2rem;
-    border-bottom: 1px solid hsl(30, 18%, 87%);
+  display: flex;
+  width: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.9rem;
+  padding-left: 2rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 .recipe-table-item:last-of-type {
-    border-bottom: none;
-    padding-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .recipe-table-item > div {
-    width: 49%;
+  width: 49%;
 }
 .recipe-table-item-value {
-    color: hsl(14, 45%, 36%);
-    font-weight: 700;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
 }
 @media only screen and (max-width: 375px) {
-    html {
-        font-size: 14px;
-    }
-    /* main {
-        padding: 0;
-    }
-    .recipe-component {
-        padding: 0;
-        width: 100%;
-        border-radius: 0;
-      }
-      .recipe-img {
-        border-radius: 0;
-      } */
+  html {
+    font-size: 14px;
+  }
+  main {
+    padding: 0;
+  }
+  .recipe-component {
+    border-radius: 0;
+    padding: 0;
+  }
+  .recipe-component-content {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+  .recipe-img {
+    border-radius: 0;
+  }
 }
